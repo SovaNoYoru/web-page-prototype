@@ -8,6 +8,9 @@
 button {
     font-family: inherit;
     font-weight: inherit;
+    outline: none;
+    border: none;
+    box-shadow: none;
 }
 /* reset styles */
 
@@ -36,6 +39,31 @@ body {
     background: #D6D6D6;
 }
 
+/* common button styles */
+button {
+    cursor: pointer;
+    transform: transform 0.2s ease,
+}
+
+button:hover {
+    transform: scale(0.97);
+}
+
+button:active {
+    color: #817a7a;
+}
+/* common button styles */
+
+/* common link styles */
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffffff;
+}
+/* common link styles */
+
 /* header styles */
 header {
     padding-top: 20px;
@@ -49,26 +77,56 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: #131313;
-    padding-left: 28px;
-    padding-top: 28px;
-    padding-bottom: 28px;
-    padding-right: 10.5px;
+    padding-left: 10px;
+    padding-top: 10.5px;
+    padding-bottom: 10.5px;
+    padding-right: 10px;
     border-radius: 80px;
 }
-/* .concept-button {
-    font-family: 'Inter', sans-serif;
+
+.contact-button {
     font-weight: 700;
-} */
+    color: #FFFFFF;
+    background-color: #FF0000;
+    padding-left: 12px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 12px;
+    border-radius: 30px;
+}
+
+.concept-button {
+    font-weight: 700;
+    color: #FFFFFF;
+    background-color: #131313;
+    padding-left: 12px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 12px;
+    border-radius: 30px;
+}
+
+.PROJECTS-styles {
+    font-weight: 700;
+    color: #FF0000;
+}
+
+.links-styles {
+    font-weight: 700;
+    color: #A7A7A7;
+}
 
 .nav-links {
+    display: flex;
     flex-wrap: nowrap;
+    gap: 20px;
     
 }
 
 .shift-right{
     display: flex;
     margin-left: auto;
-    padding-right: 3%;
+    padding-right: 84px;
     padding-left: 3%;
 }
 /* navbar */
